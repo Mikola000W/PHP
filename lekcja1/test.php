@@ -11,7 +11,7 @@
 </header>
 <body>
 <div class="container">
-    <form action="stronalogowania.php" method="get" id='mid' class="containerdiv">
+    <form action="SignInPage.php" method="get" id='mid' class="containerdiv">
         
         <input type="text" name="userName" id="input"><br>
         

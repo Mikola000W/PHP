@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="./styles/strlog.css">
 </head>
 <header id="strona">
-    signInPage
+    signUpPage
 </header>
 <body>
 <div class="container">
-    <form action="signIn.php" method="POST" id='mid' class="containerdiv">
+    <form action="signUp.php" method="POST" id='mid' class="containerdiv">
         
         <input type="text" placeholder="Podaj Nazwę" name="userName" id="input"><br>        
         <input type="email" placeholder="Podaj Email" name="userEmail" id="input"><br>        
         <input type="password" placeholder="Podaj Hasło" name="userPassword" id="input"><br>
+        <input type="password" placeholder="Podaj Ponownie Hasło" name="userPassword" id="input"><br>
         <?php
             if(isset($_SESSION['signInError'])) {
-                echo "<p style='color: red'>Niepoprawy login lub hasło!</p>";
+                echo "<p style='color: red'>Niepoprawny login lub hasło!</p>";
             }
         ?>        
         <input type="submit" value="Zaloguj" id="przycisk">
