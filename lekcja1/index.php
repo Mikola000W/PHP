@@ -7,13 +7,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>IndexSite</title>
 </head>
 <body>
     <header id="header">
         <div class="header__container">
-            <?php define("LOGO","LOGO")?>
-            <h1><?php echo LOGO?></h1>
+            <?php define("Index","Index")?>
+            <h1><?php echo Index?></h1>
             <nav>
                 <ul id="listindex">
                     <li><a href="#">Home</a></li>
@@ -25,8 +25,8 @@
                         if  (isset($_SESSION['signedIn']) && $_SESSION['signedIn'] === true) {
                             echo '<button><a href="logout.php">WYLOGUJ</a></button>';
                         } else {
-                            echo '<button><a href="signInPage.php">ZALOGUJ</a></button>';
-                            echo '<button><a href="signUpPage.php">ZAREJESTRUJ</a></button>';
+                            echo '<button style="background-color:lightgreen;margin-right:1rem";><a href="signInPage.php">ZALOGUJ</a></button>';
+                            echo '<button style="background-color:lightgreen;margin-left:1rem;"><a href="signUpPage.php">ZAREJESTRUJ</a></button>';
                         }
                     ?>
                 </div>

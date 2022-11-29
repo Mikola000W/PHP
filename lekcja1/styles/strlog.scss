@@ -47,7 +47,17 @@ body{
     
 }
 #przycisk{
-    background-color: rgb(101, 255, 108);
+    background-color: rgb(38, 255, 49);
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    width: 35rem;
+    height: 3rem;
+    justify-content : center;
+    border: transparent;
+}
+#przycisk:hover{
+    background-color: rgb(148, 255, 154);
+    border-radius: 25px;
     margin-top: 2rem;
     font-size: 1.4rem;
     width: 35rem;

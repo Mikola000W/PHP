@@ -1,11 +1,19 @@
 #header {
   background-color: burlywood;
-  padding-bottom: 25px;
-  margin-top: 25px;
+  margin-left: 9%;
+  margin-right: 9%;
   text-align: center;
+  align-content:center;
 }
 
 body {
-  background-color: blue;
+  background-image: url("background.jpeg");
+  background-size: cover;
 }
+
 /*# sourceMappingURL=style.css.map */
+#listindex{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  list-style: none;
+  
+}

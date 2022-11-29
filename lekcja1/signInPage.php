@@ -1,30 +1,31 @@
 <?php
     session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Page</title>
+    <title>SignInPage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/strlog.css">
 </head>
 <header id="strona">
-    signInPage
+    SignIn
 </header>
 <body>
 <div class="container">
-    <form action="signIn.php" method="POST" id='mid' class="containerdiv">
+    <form action="index.php" method="POST" id='mid' class="containerdiv">
         
-        <input type="text" placeholder="Podaj Nazwę" name="userName" id="input"><br>        
-        <input type="email" placeholder="Podaj Email" name="userEmail" id="input"><br>        
-        <input type="password" placeholder="Podaj Hasło" name="userPassword" id="input"><br>
+        <input type="text" placeholder="Login" name="userName" id="input"><br>        
+        <input type="email" placeholder="Email" name="userEmail" id="input"><br>        
+        <input type="password" placeholder="Password" name="userPassword" id="input"><br>
         <?php
             if(isset($_SESSION['signInError'])) {
-                echo "<p style='color: red'>Niepoprawy login lub hasło!</p>";
+                echo "<p style='color: red'>Incorrect login or/and password!</p>";
             }
         ?>        
-        <input type="submit" value="Zaloguj" id="przycisk">
+        <input type="submit" value="LogIn" id="przycisk">
 
     </form>
 </div>

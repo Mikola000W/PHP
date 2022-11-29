@@ -1,8 +1,11 @@
 <?php
     session_start();
-    require_once"config.php";
-    $connection = new mysqli($host, $db_user, $db_password, $db_name);
-
+    //require_once"config.php";
+    require_once"MainClass.php";
+    //$connection = new mysqli($host, $db_user, $db_password, $db_name);
+    $MainClass = new MainClass();
+    $connection = $MainClass -> dbConnect();
+    
     if($connection -> connect_errno == 0) {
         $userEmail = htmlentities($_POST['userEmail'], ENT_QUOTES, "UTF-8");
         $userPassword = htmlentities($_POST['userPassword'], ENT_QUOTES, "UTF-8");
